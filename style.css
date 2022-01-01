@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #f6d365, #ff9274);
+}
+
+.head_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #f8e194;
+    padding: 10px;
+    border-radius: 10px;
+}
+.head_bar > h1 {
+    color: #ff3700;
+}
+.head_bar > p {
+    color: #ff6a41;
+    font-size: 20px;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.card {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+main {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+}
+.col-1 {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.col-2 {
+    width: 60%;
+    display: flex;
+    margin-left: 20px;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #f8e194;
+}
+
+.icon-add {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 20px;
+    margin: 10px auto;
+    color: aliceblue;
+    border-radius: 50%;
+    transition-property: color;
+    transition: .5s ease-out;
+    background:#ff3700;
+}
+.icon-add:hover {
+    background-color: #ff6a41;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+#add-book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.input_section > #add-book > h2 {
+    color: #ff6a41;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: #ff6a41;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    background-color: #ffb7a3;
+    border-style: none;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+
+.input_section > form > .input > label {
+    color: #ff6a41;
+    font-weight: bold;
+}
+
+.book-total {
+    margin: 16px 0;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #f8e194;
+}
+
+.book-total ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ff6a41;
+}
+
+#jumlahBuku {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.search-bar {
+    background-color: #f8e194;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.search-bar > h2 {
+    color: #ff6a41;
+    text-align: center;
+}
+
+.search-bar > label {
+    color: #ff6a41;
+}
+
+.search-bar > input {
+    background-color: #ffb7a3;
+    border-style: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+.search-bar > button {
+    background-color: #ff6a41;
+    color: white;
+    margin: 10px 40%;
+    border: 0;
+    border-radius: 5px;
+    width: auto;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f8e194;
+}
+
+.book_shelf > h2 {
+    color: #ff6a41;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+article {
+    background-color: #ffb7a3;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.action > button {
+    margin: 5px auto;
+}
+
+.action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.action > .red {
+    background-color: darkred;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    .col-2 {
+        flex-direction: column;
+    }
+    .col-1,
+    .col-2 {
+        width: 100%;
+        margin: 0 0;
+    }
+    .action > button {
+        margin: 5px 10px 0 0;
+    }
+}

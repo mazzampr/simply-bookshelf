@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+    crossorigin="anonymous"
+    />
+</head>
+<body>
+<header class="head_bar card">
+    <h1>Bookshelf <span style="color: #000000;">Apps</span></h1>
+    <p>Simpan buku favoritmu disini dengan mudah</p>
+</header>
+<main>
+    <div class="col-1">
+        <section class="input_section card">
+            <div id="add-book">
+                <h2>Masukkan Buku Baru</h2>
+                <div class="icon-add" id="icon-add">
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+            </div>
+            <form id="inputBook" hidden>
+                <div class="input">
+                    <label for="inputBookTitle">Judul</label>
+                    <input id="inputBookTitle" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="inputBookAuthor">Penulis</label>
+                    <input id="inputBookAuthor" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="inputBookYear">Tahun</label>
+                    <input id="inputBookYear" type="number" required>
+                </div>
+                <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>"Belum selesai dibaca"</span></button>
+            </form>
+        </section>
+
+        <section class="book-total card">
+            <ul>
+                <li>
+                <h2>Jumlah Koleksi Buku</h2>
+                <p id="jumlahBuku"></p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="search-bar card">
+            <h2>Cari Buku</h2>
+            <form id="search-book">
+                <label for="searchBook">Judul</label>
+                <input id="searchBook" type="text">
+                <button id="searchSubmit" type="submit">Cari</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="col-2">
+        <section class="book_shelf card">
+            <h2>Belum selesai dibaca</h2>
+            <div id="incompleteBookshelfList" class="book_list">
+
+            </div>
+        </section>
+
+        <section class="book_shelf card">
+            <h2>Selesai dibaca</h2>
+            <div id="completeBookshelfList" class="book_list">
+
+            </div>
+        </section>
+    </div>
+</main>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
